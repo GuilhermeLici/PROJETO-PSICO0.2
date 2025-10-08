@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat de Apoio Psicológico</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="chat-container">
+    <h2>Chat de Apoio Psicológico</h2>
+    <div id="chatbox" class="chat-box"></div>
+
+    <div id="botoesResposta" class="botoes-resposta">
+      <button onclick="responder('sim')" class="btn-verde">Sim</button>
+      <button onclick="responder('nao')" class="btn-vermelho">Não</button>
+    </div>
+
+    <div id="resultado" class="resultado">
+      <h3>Resultado Final:</h3>
+      <p>Ansiedade: <span id="resultado-ansiedade">0%</span></p>
+      <div class="barra"><div id="barra-ansiedade" class="progresso"></div></div>
+
+      <p>Depressão: <span id="resultado-depressao">0%</span></p>
+      <div class="barra"><div id="barra-depressao" class="progresso"></div></div>
+
+      <p>TDAH: <span id="resultado-tdah">0%</span></p>
+      <div class="barra"><div id="barra-tdah" class="progresso"></div></div>
+    </div>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>
